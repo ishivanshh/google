@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: url("{{ url_for('static', filename='floral-bg.jpg') }}") no-repeat center center fixed;
+      background-size: cover;
+      animation: fadeInBg 2.5s ease-in-out;
+    }
+
+    @keyframes fadeInBg {
+      from { opacity: 0; transform: scale(1.05); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .fade-in-card {
+      animation: fadeInCard 1.8s ease forwards;
+    }
+
+    @keyframes fadeInCard {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-[#fdf5f6] flex flex-col">
+
+  <!-- 🔹 NAVBAR -->
+  <header class="bg-[#0d2c40] text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Left: Logo -->
+      <div class="flex items-center space-x-2">
+        <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+          <span class="text-[#0d2c40] font-bold">👤</span>
+        </div>
+        <h1 class="text-xl font-['Playfair_Display'] font-bold tracking-wide">INDIANPALLETE</h1>
+      </div>
+
+      <!-- Right: Links -->
+      <nav class="hidden md:flex space-x-8 text-sm font-medium">
+        <a href="#" class="hover:text-yellow-400 transition">SOCIAL MEDIA</a>
+        <a href="#" class="hover:text-yellow-400 transition">COMPARE</a>
+        <a href="#" class="hover:text-yellow-400 transition">SUGGEST</a>
+        <a href="#" class="hover:text-yellow-400 transition">CONTACT US</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🔹 LOGIN CARD -->
+  <main class="flex-grow flex items-center justify-center px-4 relative">
+    <!-- Overlay for subtle tint -->
+    <div class="absolute inset-0 bg-[#fdf5f6]/70 backdrop-blur-sm"></div>
+
+    <div class="relative w-full max-w-md p-8 space-y-6 bg-[#fffaf5]/95 rounded-2xl shadow-xl border border-gray-200 mt-10 fade-in-card">
+      
+      <h2 class="text-3xl font-bold text-center text-[#0d2c40] font-['Playfair_Display']">
+        Welcome Back
+      </h2>
+      <p class="text-center text-gray-600">Sign in to your account</p>
+
+      <!-- Flash Messages -->
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          <ul class="space-y-2">
+            {% for category, message in messages %}
+              <li class="p-3 text-sm rounded-lg 
+                {% if category == 'success' %}bg-green-100 text-green-700
+                {% elif category == 'danger' %}bg-red-100 text-red-700
+                {% else %}bg-blue-100 text-blue-700{% endif %}">
+                {{ message }}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      {% endwith %}
+
+      <!-- Form -->
+      <form action="{{ url_for('login') }}" method="post" class="space-y-4">
+        <div>
+          <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+          <input type="text" id="username" name="username" required 
+            class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-[#0d2c40] focus:border-[#0d2c40] sm:text-sm">
+        </div>
+
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+          <input type="password" id="password" name="password" required 
+            class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-[#0d2c40] focus:border-[#0d2c40] sm:text-sm">
+        </div>
+
+        <button type="submit" 
+          class="w-full py-2 px-4 rounded-lg shadow-md text-sm font-medium text-white bg-[#0d2c40] hover:bg-[#143d59] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0d2c40] transition duration-200">
+          Log In
+        </button>
+      </form>
+
+      <p class="text-center text-sm text-gray-600">
+        Don’t have an account?
+        <a href="{{ url_for('register') }}" class="font-medium text-[#0d2c40] hover:underline">Sign Up</a>
+      </p>
+    </div>
+  </main>
+
+</body>
+</html>

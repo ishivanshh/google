@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Codes & Pixel - Artisans</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@400;600;700;800;900&family=Oswald:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+  </head>
+  <body class="site-body">
+    <div class="top-trim"></div>
+
+    <header class="header">
+      <div class="container">
+        <div class="header-row">
+          <div class="brand">
+            <div class="avatar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="avatar-icon"
+              >
+                <path
+                  d="M12 12a5 5 0 100-10 5 5 0 000 10zm-7 9a7 7 0 1114 0H5z"
+                />
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="cinzel logo-part">Indianpallete</span>
+            </div>
+          </div>
+          <nav class="nav">
+            <a href="#" id="socialMediaLink">Social Media</a>
+            <a href="#" id="compareLink">Compare</a>
+            <a href="#" id="suggestLink">Suggest</a>
+            <a href="#" id="contactus">Contact Us</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="side-strip"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-grid">
+          <div class="left-col">
+            <div class="card-stack" id="cardStack">
+              <div class="info-card">
+                <div class="card-lip"></div>
+                <div class="info-grid">
+                  <div>
+                    <p class="kicker">
+                      Most beautiful traditional crafts of Jaipur
+                    </p>
+                    <h1 class="title">Blue Pottery</h1>
+                    <div class="title-underline"></div>
+                    <p class="body-text">
+                      It doesn’t use any clay at all. The blue pottery is made
+                      from a special dough of quartz stone powder, powdered
+                      glass, and other natural ingredients.
+                    </p>
+                  </div>
+                  <div class="pottery-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1615640325967-af4cfa4c0c6a?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="card-lip"></div>
+                <div class="info-grid">
+                  <div>
+                    <p class="kicker">Handwoven textiles of Kutch</p>
+                    <h1 class="title">Kutchi Weaves</h1>
+                    <div class="title-underline"></div>
+                    <p class="body-text">
+                      Vibrant motifs and sturdy textures crafted on traditional
+                      pit looms using organic dyes and cotton blends.
+                    </p>
+                  </div>
+                  <div class="pottery-img">
+                    <img
+                      src="https://plus.unsplash.com/premium_photo-1679811677744-c48e8d887fa5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="card-lip"></div>
+                <div class="info-grid">
+                  <div>
+                    <p class="kicker">Carved art from Saharanpur</p>
+                    <h1 class="title">Wood Inlay</h1>
+                    <div class="title-underline"></div>
+                    <p class="body-text">
+                      Exquisite floral inlays and geometric patterns hand-carved
+                      into seasoned sheesham and rosewood.
+                    </p>
+                  </div>
+                  <div class="pottery-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=900&auto=format&fit=crop&q=60"
+                      alt="Wood craft"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="card-lip"></div>
+                <div class="info-grid">
+                  <div>
+                    <p class="kicker">Threads of Banaras</p>
+                    <h1 class="title">Banarasi Zari</h1>
+                    <div class="title-underline"></div>
+                    <p class="body-text">
+                      Rich silk woven with metallic zari, famed for
+                      Mughal-inspired motifs and timeless drape.
+                    </p>
+                  </div>
+                  <div class="pottery-img">
+                    <img
+                      src="https://plus.unsplash.com/premium_photo-1679868096169-cf16fabcfc45?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8"
+                      alt="Banarasi"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="card-lip"></div>
+                <div class="info-grid">
+                  <div>
+                    <p class="kicker">Art from the desert</p>
+                    <h1 class="title">Madhubani Paint</h1>
+                    <div class="title-underline"></div>
+                    <p class="body-text">
+                      Folk narratives painted with natural pigments using twigs
+                      and fingers on handmade paper.
+                    </p>
+                  </div>
+                  <div class="pottery-img">
+                    <img
+                      src="https://plus.unsplash.com/premium_photo-1726783392103-bc51a6880eb9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQ4fHx8ZW58MHx8fHx8"
+                      alt="Madhubani"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-col">
+            <a class="register-btn" href="#">Register</a>
+            <a class="assistant-btn" href="#">Assistant</a>
+            <button class="chevron-btn" aria-label="Next slide">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                class="chevron-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal-overlay" id="registrationModal">
+      <div class="registration-card">
+        <div class="card-header">
+          <h2>Welcome, Shivansh (Artisan)</h2>
+        </div>
+        <div class="card-content">
+          <button class="add-product-btn" id="addProductBtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="add-icon"
+            >
+              <path
+                d="M12 4a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H5a1 1 0 1 1 0-2h6V5a1 1 0 0 1 1-1z"
+              />
+            </svg>
+            Add New Product
+          </button>
+          <div class="products-section">
+            <h3>Your Products:</h3>
+            <div class="product-list" id="productList"></div>
+          </div>
+        </div>
+        <button class="close-btn" id="closeModal">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M6.225 4.811a1 1 0 00-1.414 1.414L10.586 12 4.81 17.775a1 1 0 101.414 1.414L12 13.414l5.775 5.775a1 1 0 001.414-1.414L13.414 12l5.775-5.775a1 1 0 00-1.414-1.414L12 10.586 6.225 4.81z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="addProductModal">
+      <div class="add-product-card">
+        <div class="card-header">
+          <h2>Add New Product</h2>
+        </div>
+        <div class="card-content">
+          <form class="product-form">
+            <input type="hidden" id="productId" value="" />
+            <div class="form-group">
+              <label for="productName">Name:</label>
+              <input
+                type="text"
+                id="productName"
+                placeholder="Enter product name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="productCategory">Category:</label>
+              <select id="productCategory">
+                <option value="Handicraft">Handicraft</option>
+                <option value="Textile">Textile</option>
+                <option value="Jewelry">Jewelry</option>
+                <option value="Pottery">Pottery</option>
+                <option value="Woodwork">Woodwork</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="productMaterial">Material:</label>
+              <input
+                type="text"
+                id="productMaterial"
+                placeholder="Enter material"
+              />
+            </div>
+            <div class="form-group">
+              <label for="productImage">Image:</label>
+              <button type="button" class="upload-btn" id="uploadBtn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="upload-icon"
+                >
+                  <path
+                    d="M12 4a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H5a1 1 0 1 1 0-2h6V5a1 1 0 0 1 1-1z"
+                  />
+                </svg>
+                Upload Button
+              </button>
+            </div>
+            <div class="ai-section">
+              <button type="button" class="ai-btn" id="generateDescBtn">
+                Generate AI Description
+              </button>
+              <div class="ai-result" id="aiDescription"></div>
+            </div>
+            <div class="ai-section">
+              <button type="button" class="ai-btn" id="suggestPriceBtn">
+                Suggest Price
+              </button>
+              <div class="ai-result" id="priceSuggestion"></div>
+            </div>
+            <button type="submit" class="save-btn" id="saveProductBtn">
+              Save Product
+            </button>
+          </form>
+        </div>
+        <button class="close-btn" id="closeAddProductModal">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M6.225 4.811a1 1 0 00-1.414 1.414L10.586 12 4.81 17.775a1 1 0 101.414 1.414L12 13.414l5.775 5.775a1 1 0 001.414-1.414L13.414 12l5.775-5.775a1 1 0 00-1.414-1.414L12 10.586 6.225 4.81z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="assistantModal">
+      <div class="assistant-card">
+        <div class="card-header">
+          <h2>Chat with Artisan Assistant</h2>
+        </div>
+        <div class="chat-container">
+          <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+              <div class="message-content">
+                <strong>Bot:</strong> Hello! How can I help you with our artisan
+                products today?
+              </div>
+            </div>
+          </div>
+          <div class="chat-input-container">
+            <input
+              type="text"
+              id="chatInput"
+              placeholder="Type your message..."
+              class="chat-input"
+            />
+            <button class="send-btn" id="sendMessage">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="send-icon"
+              >
+                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <button class="close-btn" id="closeAssistantModal">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M6.225 4.811a1 1 0 00-1.414 1.414L10.586 12 4.81 17.775a1 1 0 101.414 1.414L12 13.414l5.775 5.775a1 1 0 001.414-1.414L13.414 12l5.775-5.775a1 1 0 00-1.414-1.414L12 10.586 6.225 4.81z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="socialMediaModal">
+      <div class="enlist-container">
+        <div class="enlist-header">
+          <h2>Social Media Post Generator</h2>
+          <p>
+            Generate fresh, data-driven post ideas to boost your social media.
+          </p>
+        </div>
+
+        <div class="button-group">
+          <button class="generate-btn" id="generatePostBtn">
+            Generate New Idea ✨
+          </button>
+        </div>
+
+        <div class="loader" id="loader"></div>
+
+        <div class="placeholder-content" id="socialPlaceholder">
+          <h3>Click "Generate" to get a new idea</h3>
+          <p>
+            Our AI assistant will provide fresh, data-driven suggestions to
+            boost your social media.
+          </p>
+        </div>
+
+        <div class="idea-card" id="ideaCard">
+          <div class="card-header">
+            <h3 id="ideaTitle"></h3>
+            <div class="close-save-buttons">
+              <button class="save-btn" id="saveIdeaBtn" title="Save Idea">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zM12 18.91l-5.69 2.45c-.24.1-.5.06-.7-.1-.2-.16-.31-.41-.31-.69V5c0-.55.45-1 1-1h10c.55 0 1 .45 1 1v15.57c0 .28-.11.53-.31.69-.2.16-.46.2-.7.1L12 18.91z"
+                  />
+                </svg>
+              </button>
+              <button class="close-btn" id="closeCardBtn" title="Close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M6.225 4.811a1 1 0 00-1.414 1.414L10.586 12 4.81 17.775a1 1 0 101.414 1.414L12 13.414l5.775 5.775a1 1 0 001.414-1.414L13.414 12l5.775-5.775a1 1 0 00-1.414-1.414L12 10.586 6.225 4.81z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Platform</span>
+              <span id="ideaPlatform"></span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Category</span>
+              <span id="ideaCategory"></span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Effective Post Type</span>
+              <span id="ideaPostType"></span>
+            </div>
+          </div>
+          <div class="idea-description">
+            <span id="ideaDescriptionText"></span>
+          </div>
+          <div class="idea-stats">
+            <div class="stats-item">
+              <strong id="likes"></strong>
+              <span>Likes</span>
+            </div>
+            <div class="stats-item">
+              <strong id="shares"></strong>
+              <span>Shares</span>
+            </div>
+            <div class="stats-item">
+              <strong id="engagement"></strong>
+              <span>Engagement</span>
+            </div>
+          </div>
+          <div class="cta-buttons">
+            <button class="btn btn-save" id="saveIdeaCtaBtn">Save Idea</button>
+            <button class="btn btn-create">Create Campaign</button>
+          </div>
+        </div>
+        <button class="close-btn" id="closeSocialMediaModal">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M6.225 4.811a1 1 0 00-1.414 1.414L10.586 12 4.81 17.775a1 1 0 101.414 1.414L12 13.414l5.775 5.775a1 1 0 001.414-1.414L13.414 12l5.775-5.775a1 1 0 00-1.414-1.414L12 10.586 6.225 4.81z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="compareModal">
+      <div class="compare-container">
+        <div class="compare-header">
+          <h2>Product Comparison</h2>
+          <p>Compare your product with AI-generated market alternatives</p>
+        </div>
+
+        <div class="compare-form">
+          <div class="form-section">
+            <h3>Your Product Details</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="compareName">Product Name:</label>
+                <input
+                  type="text"
+                  id="compareName"
+                  placeholder="Enter product name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="compareCategory">Category:</label>
+                <select id="compareCategory">
+                  <option value="Handicraft">Handicraft</option>
+                  <option value="Textile">Textile</option>
+                  <option value="Jewelry">Jewelry</option>
+                  <option value="Pottery">Pottery</option>
+                  <option value="Woodwork">Woodwork</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="compareMaterial">Material:</label>
+                <input
+                  type="text"
+                  id="compareMaterial"
+                  placeholder="Enter material"
+                />
+              </div>
+              <div class="form-group">
+                <label for="comparePrice">Your Price:</label>
+                <input
+                  type="text"
+                  id="comparePrice"
+                  placeholder="Enter your price"
+                />
+              </div>
+            </div>
+            <div class="form-group full-width">
+              <label for="compareDescription">Description:</label>
+              <textarea
+                id="compareDescription"
+                placeholder="Enter product description"
+                rows="3"
+              ></textarea>
+            </div>
+            <button class="compare-btn" id="generateComparison">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="compare-icon"
+              >
+                <path
+                  d="M9 3l-1.17 1.17L9 5.34V3zM7.83 1.17L6.41 2.59 4.83 1.01 6.24-.41 7.83 1.17zM21 3h-2v2.34l1.17-1.17L21 3zM19.17 1.17L20.59 2.59l1.58-1.58L20.76-.41 19.17 1.17zM12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"
+                />
+              </svg>
+              Generate Comparison
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="comparison-results"
+          id="comparisonResults"
+          style="display: none"
+        >
+          <div class="comparison-header">
+            <h3>Market Comparison Analysis</h3>
+            <div class="comparison-stats">
+              <span class="stat-item">
+                <strong id="similarityScore">0%</strong> Similarity
+              </span>
+              <span class="stat-item">
+                <strong id="priceDifference">₹0</strong> Price Difference
+              </span>
+            </div>
+          </div>
+
+          <div class="comparison-grid">
+            <div class="product-column">
+              <h4>Your Product</h4>
+              <div class="product-card user-product" id="userProductCard"></div>
+            </div>
+
+            <div class="vs-divider">
+              <div class="vs-circle">VS</div>
+            </div>
+
+            <div class="product-column">
+              <h4>Market Alternative</h4>
+              <div
+                class="product-card market-product"
+                id="marketProductCard"
+              ></div>
+            </div>
+          </div>
+
+          <div class="comparison-analysis">
+            <h4>Detailed Analysis</h4>
+            <div class="analysis-grid">
+              <div class="analysis-item">
+                <h5>Price Analysis</h5>
+                <div id="priceAnalysis" class="analysis-content"></div>
+              </div>
+              <div class="analysis-item">
+                <h5>Feature Comparison</h5>
+                <div id="featureAnalysis" class="analysis-content"></div>
+              </div>
+              <div class="analysis-item">
+                <h5>Market Position</h5>
+                <div id="marketAnalysis" class="analysis-content"></div>
+              </div>
+              <div class="analysis-item">
+                <h5>Recommendations</h5>
+                <div id="recommendations" class="analysis-content"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="close-btn" id="closeCompareModal">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M6.225 4.811a1 1 0 00-1.414 1.414L10.586 12 4.81 17.775a1 1 0 101.414 1.414L12 13.414l5.775 5.775a1 1 0 001.414-1.414L13.414 12l5.775-5.775a1 1 0 00-1.414-1.414L12 10.586 6.225 4.81z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="suggestModal">
+      <div class="enlist-container">
+        <div class="enlist-header">
+          <h2>Trending Artisan Products</h2>
+          <p>Discover new product ideas and market trends, powered by AI.</p>
+        </div>
+        <div class="suggest-content">
+          <button class="suggest-btn" id="generateSuggestionsBtn">
+            Get Trending Product Ideas
+          </button>
+          <div class="products-grid" id="suggestedProductsGrid"></div>
+        </div>
+        <button class="close-btn" id="closeSuggestModal">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M6.225 4.811a1 1 0 00-1.414 1.414L10.586 12 4.81 17.775a1 1 0 101.414 1.414L12 13.414l5.775 5.775a1 1 0 001.414-1.414L13.414 12l5.775-5.775a1 1 0 00-1.414-1.414L12 10.586 6.225 4.81z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="contactModal">
+      <div class="contact-container">
+        <div class="contact-header">
+          <h2>Get in Touch</h2>
+          <p>We’d love to hear from you! Please fill in the details below.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="contactName">Full Name</label>
+                <input
+                  type="text"
+                  id="contactName"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail">Email Address</label>
+                <input
+                  type="email"
+                  id="contactEmail"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea
+                  id="contactMessage"
+                  rows="5"
+                  placeholder="Write your message..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="send-btn">Send Message</button>
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <h3>Contact Details</h3>
+            <p><strong>Email:</strong> support@indianpallete.com</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Address:</strong> Jaipur, Rajasthan, India</p>
+
+            <h3>Follow Us</h3>
+            <div class="social-links">
+              <a href="#">🌐 Instagram</a><br />
+              <a href="#">🌐 Facebook</a><br />
+              <a href="#">🌐 Twitter</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="close-btn" id="closeContactModal">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M6.225 4.811a1 1 0 00-1.414 1.414L10.586 12 4.81 17.775a1 1 0 101.414 1.414L12 13.414l5.775 5.775a1 1 0 001.414-1.414L13.414 12l5.775-5.775a1 1 0 00-1.414-1.414L12 10.586 6.225 4.81z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="modal-overlay" id="thankyouCard">
+      <div class="thankyou-content">
+        <h3>✅ Thank You!</h3>
+        <p>
+          Thanks for connecting with us. We will respond within the next working
+          24 hours.
+        </p>
+        <button id="closeThankyou">Close</button>
+      </div>
+    </div>
+    <div>
+      <section class="states-section">
+        <div class="states-container">
+          <div class="state-circle">
+            <img src="static/img/states/1.jpeg" alt="Andhra Pradesh" />
+            <span style="color: black;">Arunachal Pradesh</span>
+          </div>
+          <div class="state-circle">
+            <img src="static/img/states/2.jpeg" alt="Telangana" />
+            <span style="color: black;">Telangana</span>
+          </div>
+          <div class="state-circle">
+            <img src="static/img/states/3.jpeg" alt="Tamil Nadu" />
+            <span style="color: black;">Tamil Nadu</span>
+          </div>
+          <div class="state-circle">
+            <img src="static/img/states/4.jpeg" alt="Sikkim" />
+            <span style="color: black;">Sikkim</span>
+          </div>
+          <div class="state-circle">
+            <img src="static/img/states/5.jpeg" alt="Rajasthan" />
+            <span style="color: black;">Rajasthan</span>
+  
+          </div>
+          <div class="state-circle">
+            <img src="static/img/states/6.jpeg" alt="Punjab" />
+            <span style="color: black;">Punjab</span>
+          
+          </div>
+          <div class="state-circle">
+            <img src="static/img/states/7.jpeg" alt="odisha" />
+            <span style="color: black;">Odisha</span>
+          
+          </div>
+          <div class="state-circle">
+            <img src="static/img/states/8.jpeg" alt="Nagaland" />
+            <span style="color: black;">Nagaland</span>
+          
+          </div>
+          <div class="state-circle">
+            <img src="static/img/states/9.jpeg" alt="Mizoram" />
+            <span style="color: black;">Mizoram</span>
+          </div>
+          <div class="state-circle">
+            <img src="static/img/states/10.jpeg" alt="Meghalaya" />
+            <span style="color: black;">Meghalaya</span>
+          </div>
+          <div class="state-circle">
+            <img src="static/img/states/11.jpeg" alt="Manipur" />
+            <span style="color: black;">Manipur</span>
+          </div>
+          
+          <div class="state-circle">
+            <img src="static/img/states/12.jpeg" alt="Maharashtra" />
+            <span style="color: black;">Maharashtra</span>
+          </div>
+          
+          <div class="state-circle">
+            <img src="static/img/states/13.jpeg" alt="Andhra Pradesh" />
+            <span style="color: black;">Madhya Pradesh</span>
+          </div>
+        
+          <div class="state-circle">
+            <img src="static/img/states/14.jpeg" alt="Arunachal Pradesh" /><span style="color: black;">kerala</span>
+          
+          </div>
+          <div class="state-circle">
+            <img src="static/img/states/15.jpeg" alt="Assam" />
+            <span style="color: black;">Karnataka</span>
+          </div>
+          
+          <div class="state-circle">
+            <img src="static/img/states/16.jpeg" alt="Bihar" />
+            <span style="color: black;">Jharkhand</span>
+          
+          </div>
+          <div class="state-circle">
+            <img src="static/img/states/17.jpeg" alt="Andhra Pradesh" />
+            <span style="color: black;">Jammu & Kashmir</span>
+          </div>
+          
+          <div class="state-circle">
+            <img src="static/img/states/18.jpeg" alt="Andhra Pradesh" />
+            <span style="color: black;">Himachal Pradesh</span>
+          </div>
+          
+          <div class="state-circle">
+            <img src="static/img/states/19.jpeg" alt="Andhra Pradesh" />
+            <span style="color: black;">Haryana</span>
+          
+          </div>
+          <div class="state-circle">
+            <img src="static/img/states/20.jpeg" alt="Andhra Pradesh" />
+            <span style="color: black;">Gujarat</span>
+          </div>
+          
+          <div class="state-circle">
+            <img src="static/img/states/21.jpeg" alt="Andhra Pradesh" />
+            <span style="color: black;">Goa</span>
+          </div>
+          
+          <div class="state-circle">
+            <img src="static/img/states/22.jpeg" alt="Arunachal Pradesh" />
+            <span style="color: black;">Chattisgarh</span>
+          </div>
+          
+          <div class="state-circle">
+            <img src="static/img/states/23.jpeg" alt="Assam" />
+            <span style="color: black;">Bihar</span>
+          </div>
+          
+          <div class="state-circle">
+            <img src="static/img/states/24.jpeg" alt="Bihar" />
+            <span style="color: black;">Assam</span>
+          
+          </div>
+          <div class="state-circle">
+            <img src="static/img/states/25.jpeg" alt="Andhra Pradesh" />
+            <span style="color: black;">West Bengal</span>
+          </div>
+          
+          <div class="state-circle">
+            <img src="static/img/states/26.jpeg" alt="Andhra Pradesh" />
+            <span style="color: black;">Tripura</span>
+          
+          </div>
+          <div class="state-circle">
+            <img src="static/img/states/27.jpeg" alt="Andhra Pradesh" />
+            <span style="color: black;">Uttar Pradesh</span>
+          </div>
+          
+          <div class="state-circle">
+            <img src="static/img/states/28.jpeg" alt="Andhra Pradesh" />
+            <span style="color: black;">Uttrakhand</span>
+          </div>
+        
+          <div class="state-circle">
+            <img src="static/img/states/29.jpeg" alt="Andhra Pradesh" />
+            <span style="color: black;">Arunachal Pradesh</span>
+          </div>
+        
+        </div>
+      </section>
+
+      <!-- Products Section -->
+      <section class="products-section">
+        <div class="products-grid">
+          <!-- Product cards (8) -->
+          <div class="product-card">
+            <img src="static/img/product/1.jpeg" alt="Madhubani Painting" />
+            <h3>Madhubani Painting</h3>
+            <p>Handmade art using natural colors.</p>
+            <span class="price">₹1200</span>
+            <span class="state">Bihar</span>
+          </div>
+
+          <div class="product-card">
+            <img src="static/img/product/2.jpeg" alt="Terracotta Pot" />
+            <h3>Terracotta Pot</h3>
+            <p>Traditional clay pottery.</p>
+            <span class="price">₹850</span>
+            <span class="state">West Bengal</span>
+          </div>
+
+          <div class="product-card">
+            <img src="static/img/product/3.jpeg" alt="Phulkari Dupatta" />
+            <h3>Phulkari Dupatta</h3>
+            <p>Embroidered with traditional motifs.</p>
+            <span class="price">₹1500</span>
+            <span class="state">Punjab</span>
+          </div>
+
+          <div class="product-card">
+            <img src="static/img/product/4.jpeg" alt="Blue Pottery Vase" />
+            <h3>Blue Pottery Vase</h3>
+            <p>Delicate hand-painted pottery.</p>
+            <span class="price">₹2000</span>
+            <span class="state">Rajasthan</span>
+          </div>
+
+          <div class="product-card">
+            <img src="static/img/product/5.jpeg" alt="Kanjeevaram Saree" />
+            <h3>Kanjeevaram Saree</h3>
+            <p>Silk saree with rich borders.</p>
+            <span class="price">₹7500</span>
+            <span class="state">Tamil Nadu</span>
+          </div>
+
+          <div class="product-card">
+            <img src="static/img/product/6.jpeg" alt="Channapatna Toys" />
+            <h3>Channapatna Toys</h3>
+            <p>Eco-friendly wooden toys.</p>
+            <span class="price">₹600</span>
+            <span class="state">Karnataka</span>
+          </div>
+
+          <div class="product-card">
+            <img src="static/img/product/7.jpeg" alt="Banarasi Saree" />
+            <h3>Banarasi Saree</h3>
+            <p>Silk saree with zari work.</p>
+            <span class="price">₹9000</span>
+            <span class="state">Uttar Pradesh</span>
+          </div>
+
+          <div class="product-card">
+            <img src="static/img/product/8.jpeg" alt="Pashmina Shawl" />
+            <h3>Pashmina Shawl</h3>
+            <p>Handwoven woolen luxury.</p>
+            <span class="price">₹5000</span>
+            <span class="state">Jammu & Kashmir</span>
+          </div>
+          <div class="product-card">
+            <img src="static/img/product/9.png" alt="Warli Painting" />
+            <h3>Warli Painting</h3>
+            <p>Traditional tribal art with earthy tones.</p>
+            <span class="price">₹1800</span>
+            <span class="state">Maharashtra</span>
+          </div>
+
+          <div class="product-card">
+            <img src="static/img/product/10.png" alt="Kullu Shawl" />
+            <h3>Kullu Shawl</h3>
+            <p>Handwoven woolen shawl with geometric designs.</p>
+            <span class="price">₹3200</span>
+            <span class="state">Himachal Pradesh</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Banner Section -->
+      <section class="banner-section">
+        <div class="banner">
+          <h2>Discover the Heritage of India</h2>
+          <p>
+            Shop authentic handmade crafts directly from artisans of 29 states.
+          </p>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">© Indianpallete</footer>
+    <script>
+      const GEMINI_API_URL =
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=";
+      const API_KEY = "AIzaSyDatSpfwiCDO4oEFsduF3_w5MerfyZQ8oQ";
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const stack = document.getElementById("cardStack");
+        const chevronBtn = document.querySelector(".chevron-btn");
+        const registerBtn = document.querySelector(".register-btn");
+        const modal = document.getElementById("registrationModal");
+        const closeModal = document.getElementById("closeModal");
+        const addProductBtn = document.getElementById("addProductBtn");
+        const addProductModal = document.getElementById("addProductModal");
+        const closeAddProductModal = document.getElementById(
+          "closeAddProductModal"
+        );
+        const assistantBtn = document.querySelector(".assistant-btn");
+        const assistantModal = document.getElementById("assistantModal");
+        const closeAssistantModal = document.getElementById(
+          "closeAssistantModal"
+        );
+        const socialMediaLink = document.getElementById("socialMediaLink");
+        const socialMediaModal = document.getElementById("socialMediaModal");
+        const closeSocialMediaModal = document.getElementById(
+          "closeSocialMediaModal"
+        );
+        const compareLink = document.getElementById("compareLink");
+        const compareModal = document.getElementById("compareModal");
+        const closeCompareModal = document.getElementById("closeCompareModal");
+        const productList = document.getElementById("productList");
+        const contactBtn = document.getElementById("contactus");
+        const contactModal = document.getElementById("contactModal");
+        const closeContactBtn = document.getElementById("closeContactModal");
+        const contactForm = document.getElementById("contactForm");
+        const thankyouCard = document.getElementById("thankyouCard");
+        const closeThankyouBtn = document.getElementById("closeThankou");
+        const suggestLink = document.getElementById("suggestLink");
+        const suggestModal = document.getElementById("suggestModal");
+        const closeSuggestModal = document.getElementById("closeSuggestModal");
+        const generateSuggestionsBtn = document.getElementById(
+          "generateSuggestionsBtn"
+        );
+        const suggestedProductsGrid = document.getElementById(
+          "suggestedProductsGrid"
+        );
+
+        // Add sample products if local storage is empty
+        const sampleProducts = [
+          {
+            id: 1,
+            name: "Hand-Painted Vase",
+            category: "Pottery",
+            material: "Ceramic",
+            description:
+              "A beautiful, hand-painted ceramic vase with a traditional motif.",
+            price: "₹1500",
+            imageUrl:
+              "/Users/shivanshsaxena/Documents/Artisans/flask/static/img/premium_photo-1679811673265-dfe1b1bddf53.jpeg",
+          },
+          {
+            id: 2,
+            name: "Woven Wool Scarf",
+            category: "Textile",
+            material: "Wool",
+            description:
+              "A soft, handwoven scarf made from 100% organic wool with natural dyes.",
+            price: "₹850",
+            imageUrl:
+              "https://plus.unsplash.com/premium_photo-1679811677744-c48e8d887fa5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8",
+          },
+          {
+            id: 3,
+            name: "Wooden Trinket Box",
+            category: "Woodwork",
+            material: "Sheesham Wood",
+            description:
+              "An intricately carved wooden box perfect for storing small treasures.",
+            price: "₹2100",
+            imageUrl:
+              "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=900&auto=format&fit=crop&q=60",
+          },
+        ];
+
+        if (!localStorage.getItem("artisanProducts")) {
+          localStorage.setItem(
+            "artisanProducts",
+            JSON.stringify(sampleProducts)
+          );
+        }
+
+        if (!stack || !chevronBtn) return;
+
+        // Initialize: mark first card active and lock container height so layout doesn't jump
+        const cards = Array.from(stack.querySelectorAll(".info-card"));
+        if (cards.length === 0) return;
+        const measure = (el) => {
+          // Force layout to ensure accurate height when images are loaded
+          return el.getBoundingClientRect().height;
+        };
+        const setActive = (index) => {
+          cards.forEach((c, i) => c.classList.toggle("active", i === index));
+          // adjust stack min-height to active card's height
+          const activeCard = cards[index];
+          if (activeCard) {
+            const h = measure(activeCard);
+            // Set both min-height and explicit height to avoid overflow/collapse
+            stack.style.minHeight = h + "px";
+            stack.style.height = h + "px";
+          }
+        };
+        let current = 0;
+        setActive(current);
+
+        const rotateCards = () => {
+          current = (current + 1) % cards.length;
+          setActive(current);
+        };
+
+        chevronBtn.addEventListener("click", rotateCards);
+
+        // Modal functionality
+        const showModal = (modalElement) => {
+          modalElement.classList.add("show");
+          document.body.style.overflow = "hidden"; // Prevent background scrolling
+        };
+
+        const hideModal = (modalElement) => {
+          modalElement.classList.remove("show");
+          document.body.style.overflow = ""; // Restore scrolling
+        };
+
+        // Event listeners for registration modal
+        if (registerBtn) {
+          registerBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            loadUserProducts();
+            showModal(modal);
+          });
+        }
+
+        if (closeModal) {
+          closeModal.addEventListener("click", () => hideModal(modal));
+        }
+
+        // Close registration modal when clicking outside
+        if (modal) {
+          modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
+              hideModal(modal);
+            }
+          });
+        }
+
+        // Event listeners for add product modal
+        if (addProductBtn) {
+          addProductBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            hideModal(modal);
+            resetAddProductForm();
+            showModal(addProductModal);
+          });
+        }
+
+        if (closeAddProductModal) {
+          closeAddProductModal.addEventListener("click", () =>
+            hideModal(addProductModal)
+          );
+        }
+
+        // Close add product modal when clicking outside
+        if (addProductModal) {
+          addProductModal.addEventListener("click", (e) => {
+            if (e.target === addProductModal) {
+              hideModal(addProductModal);
+            }
+          });
+        }
+
+        // Event listeners for assistant modal
+        if (assistantBtn) {
+          assistantBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            showModal(assistantModal);
+          });
+        }
+
+        if (closeAssistantModal) {
+          closeAssistantModal.addEventListener("click", () =>
+            hideModal(assistantModal)
+          );
+        }
+
+        // Close assistant modal when clicking outside
+        if (assistantModal) {
+          assistantModal.addEventListener("click", (e) => {
+            if (e.target === assistantModal) {
+              hideModal(assistantModal);
+            }
+          });
+        }
+
+        if (socialMediaLink) {
+          socialMediaLink.addEventListener("click", (e) => {
+            e.preventDefault();
+            window.location.href = "/social"; // will open social.html
+          });
+        }
+
+        // Event listeners for compare modal
+        if (compareLink) {
+          compareLink.addEventListener("click", (e) => {
+            e.preventDefault();
+            showModal(compareModal);
+          });
+        }
+
+        if (closeCompareModal) {
+          closeCompareModal.addEventListener("click", () =>
+            hideModal(compareModal)
+          );
+        }
+
+        // Close compare modal when clicking outside
+        if (compareModal) {
+          compareModal.addEventListener("click", (e) => {
+            if (e.target === compareModal) {
+              hideModal(compareModal);
+            }
+          });
+        }
+
+        // Contact modal
+        if (contactBtn) {
+          contactBtn.addEventListener("click", () => {
+            showModal(contactModal);
+          });
+        }
+        if (closeContactBtn) {
+          closeContactBtn.addEventListener("click", () => {
+            hideModal(contactModal);
+          });
+        }
+        if (contactForm) {
+          contactForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            hideModal(contactModal);
+            showModal(thankyouCard);
+            contactForm.reset();
+          });
+        }
+        if (closeThankyouBtn) {
+          closeThankyouBtn.addEventListener("click", () => {
+            hideModal(thankyouCard);
+          });
+        }
+
+        // Suggest Modal listeners
+        if (suggestLink) {
+          suggestLink.addEventListener("click", (e) => {
+            e.preventDefault();
+            showModal(suggestModal);
+          });
+        }
+
+        if (closeSuggestModal) {
+          closeSuggestModal.addEventListener("click", () =>
+            hideModal(suggestModal)
+          );
+        }
+
+        // Close modals with Escape key
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") {
+            const modals = [
+              modal,
+              addProductModal,
+              assistantModal,
+              socialMediaModal,
+              compareModal,
+              contactModal,
+              thankyouCard,
+              suggestModal,
+            ];
+            modals.forEach((m) => {
+              if (m && m.classList.contains("show")) {
+                hideModal(m);
+              }
+            });
+          }
+        });
+
+        // Gemini API Integration
+        async function generateContentWithGemini(prompt) {
+          const payload = {
+            contents: [{ parts: [{ text: prompt }] }],
+            systemInstruction: {
+              parts: [
+                {
+                  text: "You are an expert artisan marketplace assistant. Provide concise, helpful, and polite responses.",
+                },
+              ],
+            },
+          };
+
+          try {
+            const response = await fetch(GEMINI_API_URL + API_KEY, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload),
+            });
+            if (!response.ok) {
+              console.error(
+                `API call failed with status: ${response.status}`,
+                await response.text()
+              );
+              throw new Error(
+                `API call failed with status: ${response.status}`
+              );
+            }
+            const result = await response.json();
+            return (
+              result.candidates?.[0]?.content?.parts?.[0]?.text ||
+              "I'm sorry, I couldn't generate a response. Please try again."
+            );
+          } catch (error) {
+            console.error("Error calling Gemini API:", error);
+            return "I'm sorry, I encountered an error. Please try again later.";
+          }
+        }
+
+        async function generateStructuredContentWithGemini(prompt, schema) {
+          const payload = {
+            contents: [{ parts: [{ text: prompt }] }],
+            generationConfig: {
+              responseMimeType: "application/json",
+              responseSchema: schema,
+            },
+          };
+          try {
+            const response = await fetch(GEMINI_API_URL + API_KEY, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload),
+            });
+            if (!response.ok) {
+              console.error(
+                `API call failed with status: ${response.status}`,
+                await response.text()
+              );
+              throw new Error(
+                `API call failed with status: ${response.status}`
+              );
+            }
+            const result = await response.json();
+            if (
+              result.candidates &&
+              result.candidates.length > 0 &&
+              result.candidates[0].content &&
+              result.candidates[0].content.parts &&
+              result.candidates[0].content.parts.length > 0
+            ) {
+              const json = result.candidates[0].content.parts[0].text;
+              return JSON.parse(json);
+            }
+            return null;
+          } catch (error) {
+            console.error(
+              "Error calling Gemini API for structured content:",
+              error
+            );
+            return null;
+          }
+        }
+
+        // Add Product form functionality
+        const generateDescBtn = document.getElementById("generateDescBtn");
+        const suggestPriceBtn = document.getElementById("suggestPriceBtn");
+        const saveProductBtn = document.getElementById("saveProductBtn");
+        const uploadBtn = document.getElementById("uploadBtn");
+
+        if (generateDescBtn) {
+          generateDescBtn.addEventListener("click", async () => {
+            const name = document.getElementById("productName").value.trim();
+            const category = document
+              .getElementById("productCategory")
+              .value.trim();
+            const material = document
+              .getElementById("productMaterial")
+              .value.trim();
+            const descResult = document.getElementById("aiDescription");
+            if (!name || !category || !material) {
+              descResult.textContent = "Please fill in product details.";
+              return;
+            }
+            generateDescBtn.textContent = "Generating...";
+            generateDescBtn.disabled = true;
+
+            const prompt = `Generate a compelling description for a handcrafted product with the following details:
+          Name: ${name}
+          Category: ${category}
+          Material: ${material}
+          Make the description concise, engaging, and suitable for an artisan marketplace website. Do not add any headings or titles.`;
+
+            const description = await generateContentWithGemini(prompt);
+            descResult.textContent = `"${description}"`;
+            generateDescBtn.textContent = "Generate AI Description ✨";
+            generateDescBtn.disabled = false;
+          });
+        }
+
+        if (suggestPriceBtn) {
+          suggestPriceBtn.addEventListener("click", async () => {
+            const name = document.getElementById("productName").value.trim();
+            const category = document
+              .getElementById("productCategory")
+              .value.trim();
+            const material = document
+              .getElementById("productMaterial")
+              .value.trim();
+            const priceResult = document.getElementById("priceSuggestion");
+            if (!name || !category || !material) {
+              priceResult.textContent = "Please fill in product details.";
+              return;
+            }
+            suggestPriceBtn.textContent = "Analyzing...";
+            suggestPriceBtn.disabled = true;
+
+            const prompt = `Based on a product with the following details, suggest a realistic and competitive price range in Indian Rupees (₹).
+          Name: ${name}
+          Category: ${category}
+          Material: ${material}
+          Please provide a single number, like "₹850" and nothing else.`;
+
+            const price = await generateContentWithGemini(prompt);
+            priceResult.textContent = `Suggested Price: ${price}`;
+            suggestPriceBtn.textContent = "Suggest Price ✨";
+            suggestPriceBtn.disabled = false;
+          });
+        }
+
+        const resetAddProductForm = () => {
+          document.getElementById("productId").value = "";
+          document.getElementById("productName").value = "";
+          document.getElementById("productCategory").value = "Handicraft";
+          document.getElementById("productMaterial").value = "";
+          document.getElementById("aiDescription").textContent = "";
+          document.getElementById("priceSuggestion").textContent = "";
+          uploadBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="upload-icon"><path d="M12 4a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H5a1 1 0 1 1 0-2h6V5a1 1 0 0 1 1-1z"/></svg> Upload Button`;
+          uploadBtn.style.background = "var(--brand)";
+          saveProductBtn.textContent = "Save Product";
+          saveProductBtn.disabled = false;
+        };
+
+        if (uploadBtn) {
+          uploadBtn.addEventListener("click", () => {
+            const fileInput = document.createElement("input");
+            fileInput.type = "file";
+            fileInput.accept = "image/*";
+            fileInput.addEventListener("change", (e) => {
+              const file = e.target.files[0];
+              if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                  uploadBtn.innerHTML = `
+                  <img src="${e.target.result}" alt="Uploaded image" style="width: 20px; height: 20px; object-fit: cover; border-radius: 4px;">
+                  ${file.name}
+                `;
+                  uploadBtn.style.background = "var(--accent)";
+                };
+                reader.readAsDataURL(file);
+              }
+            });
+            fileInput.click();
+          });
+        }
+
+        let savedProducts =
+          JSON.parse(localStorage.getItem("artisanProducts")) || [];
+
+        const saveProduct = (productData) => {
+          const id = productData.id || Date.now();
+          const existingIndex = savedProducts.findIndex((p) => p.id === id);
+
+          const newProduct = {
+            id,
+            ...productData,
+            createdAt: new Date().toISOString(),
+          };
+
+          if (existingIndex > -1) {
+            savedProducts[existingIndex] = newProduct;
+          } else {
+            savedProducts.push(newProduct);
+          }
+          localStorage.setItem(
+            "artisanProducts",
+            JSON.stringify(savedProducts)
+          );
+        };
+
+        const loadUserProducts = () => {
+          productList.innerHTML = "";
+          if (savedProducts.length === 0) {
+            productList.innerHTML = `<div class="product-item">No products saved.</div>`;
+            return;
+          }
+          savedProducts.forEach((product) => {
+            const item = document.createElement("div");
+            item.className = "product-item";
+            item.innerHTML = `
+                <span class="product-name">${product.name}</span>
+                <span class="product-status">(AI Desc ✓, Price ✓)</span>
+              `;
+            productList.appendChild(item);
+          });
+        };
+
+        if (saveProductBtn) {
+          saveProductBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            const id = document.getElementById("productId").value;
+            const name = document.getElementById("productName").value;
+            const category = document.getElementById("productCategory").value;
+            const material = document.getElementById("productMaterial").value;
+            const description =
+              document.getElementById("aiDescription").textContent;
+            const price =
+              document.getElementById("priceSuggestion").textContent;
+            const imageUrl = uploadBtn.querySelector("img")
+              ? uploadBtn.querySelector("img").src
+              : null;
+
+            if (!name || !category || !material) {
+              // Replace alert with a more user-friendly message box
+              const messageBox = document.createElement("div");
+              messageBox.className = "message-box";
+              messageBox.innerHTML = `
+              <div class="message-content">
+                <p>Please fill in all required fields.</p>
+                <button onclick="this.parentElement.parentElement.remove()">OK</button>
+              </div>
+            `;
+              document.body.appendChild(messageBox);
+              return;
+            }
+
+            saveProductBtn.textContent = "Saving...";
+            saveProductBtn.disabled = true;
+
+            setTimeout(() => {
+              const productData = {
+                name,
+                category,
+                material,
+                description,
+                price,
+                imageUrl,
+                id: id || null,
+              };
+              saveProduct(productData);
+
+              // Replace alert with a more user-friendly message box
+              const messageBox = document.createElement("div");
+              messageBox.className = "message-box";
+              messageBox.innerHTML = `
+              <div class="message-content">
+                <p>Product "${name}" saved successfully!</p>
+                <button onclick="this.parentElement.parentElement.remove()">OK</button>
+              </div>
+            `;
+              document.body.appendChild(messageBox);
+
+              hideModal(addProductModal);
+              loadUserProducts();
+              showModal(modal);
+
+              resetAddProductForm();
+            }, 1500);
+          });
+        }
+
+        // Comparison Functionality
+        const generateComparisonBtn =
+          document.getElementById("generateComparison");
+        const comparisonResults = document.getElementById("comparisonResults");
+
+        if (generateComparisonBtn) {
+          generateComparisonBtn.addEventListener("click", async () => {
+            const name = document.getElementById("compareName").value;
+            const category = document.getElementById("compareCategory").value;
+            const material = document.getElementById("compareMaterial").value;
+            const price = document.getElementById("comparePrice").value;
+            const description =
+              document.getElementById("compareDescription").value;
+
+            if (!name || !category || !material || !price || !description) {
+              // Replace alert with a more user-friendly message box
+              const messageBox = document.createElement("div");
+              messageBox.className = "message-box";
+              messageBox.innerHTML = `
+                    <div class="message-content">
+                      <p>Please fill in all comparison fields.</p>
+                      <button onclick="this.parentElement.parentElement.remove()">OK</button>
+                    </div>
+                  `;
+              document.body.appendChild(messageBox);
+              return;
+            }
+
+            generateComparisonBtn.textContent = "Generating...";
+            generateComparisonBtn.disabled = true;
+            comparisonResults.style.display = "none";
+
+            const prompt = `You are a market analysis expert for handcrafted goods. I will provide details about an artisan product and your task is to generate a realistic market alternative and a detailed analysis comparing the two. Provide the response as a JSON object that includes a "marketProduct" and a detailed "analysis". The marketProduct should include a name, category, material, description, price, and an image URL. The analysis should include a priceAnalysis, featureAnalysis, marketPosition, and recommendations. Provide a numerical similarityScore (0-100) and a numerical priceDifference. The response MUST be a valid JSON object and nothing else.
+    
+              User Product Details:
+              Name: ${name}
+              Category: ${category}
+              Material: ${material}
+              Price: ${price}
+              Description: ${description}`;
+
+            const comparisonSchema = {
+              type: "OBJECT",
+              properties: {
+                marketProduct: {
+                  type: "OBJECT",
+                  properties: {
+                    name: { type: "STRING" },
+                    category: { type: "STRING" },
+                    material: { type: "STRING" },
+                    description: { type: "STRING" },
+                    price: { type: "STRING" },
+                    imageUrl: { type: "STRING" },
+                  },
+                },
+                analysis: {
+                  type: "OBJECT",
+                  properties: {
+                    priceAnalysis: { type: "STRING" },
+                    featureAnalysis: { type: "STRING" },
+                    marketPosition: { type: "STRING" },
+                    recommendations: { type: "STRING" },
+                  },
+                },
+                similarityScore: { type: "NUMBER" },
+                priceDifference: { type: "NUMBER" },
+              },
+            };
+
+            const comparisonData = await generateStructuredContentWithGemini(
+              prompt,
+              comparisonSchema
+            );
+
+            if (comparisonData) {
+              const {
+                marketProduct,
+                analysis,
+                similarityScore,
+                priceDifference,
+              } = comparisonData;
+              document.getElementById("userProductCard").innerHTML = `
+                      <div class="product-image">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="product-image-placeholder"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                      </div>
+                      <div class="product-info">
+                          <h3>${name}</h3>
+                          <div class="product-category">${category}</div>
+                          <div class="product-material">${material}</div>
+                          <div class="product-description">${description}</div>
+                          <div class="product-price">${price}</div>
+                      </div>
+                  `;
+
+              document.getElementById("marketProductCard").innerHTML = `
+                      <div class="product-image">
+                          <img src="${marketProduct.imageUrl}" alt="${marketProduct.name}">
+                      </div>
+                      <div class="product-info">
+                          <h3>${marketProduct.name}</h3>
+                          <div class="product-category">${marketProduct.category}</div>
+                          <div class="product-material">${marketProduct.material}</div>
+                          <div class="product-description">${marketProduct.description}</div>
+                          <div class="product-price">${marketProduct.price}</div>
+                      </div>
+                  `;
+
+              document.getElementById(
+                "priceAnalysis"
+              ).innerHTML = `<p>${analysis.priceAnalysis}</p>`;
+              document.getElementById(
+                "featureAnalysis"
+              ).innerHTML = `<p>${analysis.featureAnalysis}</p>`;
+              document.getElementById(
+                "marketAnalysis"
+              ).innerHTML = `<p>${analysis.marketPosition}</p>`;
+              document.getElementById(
+                "recommendations"
+              ).innerHTML = `<p>${analysis.recommendations}</p>`;
+
+              document.getElementById(
+                "similarityScore"
+              ).textContent = `${similarityScore}%`;
+              document.getElementById(
+                "priceDifference"
+              ).textContent = `₹${priceDifference}`;
+
+              comparisonResults.style.display = "block";
+            } else {
+              // Replace alert with a more user-friendly message box
+              const messageBox = document.createElement("div");
+              messageBox.className = "message-box";
+              messageBox.innerHTML = `
+                    <div class="message-content">
+                      <p>Failed to generate comparison. Please check your inputs and try again.</p>
+                      <button onclick="this.parentElement.parentElement.remove()">OK</button>
+                    </div>
+                  `;
+              document.body.appendChild(messageBox);
+            }
+
+            generateComparisonBtn.textContent = "Generate Comparison ✨";
+            generateComparisonBtn.disabled = false;
+          });
+        }
+
+        // Assistant chat functionality
+        const chatInput = document.getElementById("chatInput");
+        const sendMessage = document.getElementById("sendMessage");
+        const chatMessages = document.getElementById("chatMessages");
+
+        const addMessage = (message, isCustomer = true) => {
+          const messageDiv = document.createElement("div");
+          messageDiv.className = `message ${isCustomer ? "customer" : "bot"}`;
+
+          const messageContent = document.createElement("div");
+          messageContent.className = "message-content";
+          messageContent.innerHTML = `<strong>${
+            isCustomer ? "Customer" : "Bot"
+          }:</strong> ${message}`;
+
+          messageDiv.appendChild(messageContent);
+          chatMessages.appendChild(messageDiv);
+
+          chatMessages.scrollTop = chatMessages.scrollHeight;
+        };
+
+        const sendChatMessage = async () => {
+          const message = chatInput.value.trim();
+          if (!message) return;
+          addMessage(message, true);
+          chatInput.value = "";
+          sendMessage.disabled = true;
+
+          const response =
+            await generateContentWithGemini(`Respond to the user as a helpful customer service bot for an artisan marketplace.
+        User: ${message}`);
+
+          addMessage(response, false);
+          sendMessage.disabled = false;
+          chatInput.focus();
+        };
+
+        if (sendMessage && chatInput) {
+          sendMessage.addEventListener("click", sendChatMessage);
+          chatInput.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") {
+              sendChatMessage();
+            }
+          });
+        }
+
+        // Suggestion functionality
+        if (generateSuggestionsBtn) {
+          generateSuggestionsBtn.addEventListener("click", async () => {
+            generateSuggestionsBtn.textContent = "Generating ideas...";
+            generateSuggestionsBtn.disabled = true;
+            suggestedProductsGrid.innerHTML = "";
+
+            const prompt = `You are a market trend analyst for handcrafted artisan products in India. Your task is to generate a list of 4 unique and trending product ideas. Each idea must include a name, a concise description, a main material, a realistic price range in Indian Rupees (e.g., "₹850 - ₹1200"), and a placeholder image URL. The response MUST be a valid JSON object with a single key "products" which is an array of these product objects. Do not add any extra text outside the JSON.`;
+
+            const suggestionSchema = {
+              type: "OBJECT",
+              properties: {
+                products: {
+                  type: "ARRAY",
+                  items: {
+                    type: "OBJECT",
+                    properties: {
+                      name: { type: "STRING" },
+                      description: { type: "STRING" },
+                      material: { type: "STRING" },
+                      price: { type: "STRING" },
+                      imageUrl: { type: "STRING" },
+                    },
+                  },
+                },
+              },
+            };
+
+            const responseData = await generateStructuredContentWithGemini(
+              prompt,
+              suggestionSchema
+            );
+
+            if (responseData && responseData.products) {
+              responseData.products.forEach((product) => {
+                const productCard = document.createElement("div");
+                productCard.className = "product-card";
+                productCard.innerHTML = `
+                      <div class="product-image">
+                        <img src="${product.imageUrl}" alt="${product.name}" onerror="this.onerror=null;this.src='https://placehold.co/300x200/27455a/f7efe6?text=Image+Not+Found';">
+                      </div>
+                      <div class="product-info">
+                        <h3>${product.name}</h3>
+                        <div class="product-material">${product.material}</div>
+                        <div class="product-description">${product.description}</div>
+                        <div class="product-price">${product.price}</div>
+                      </div>
+                    `;
+                suggestedProductsGrid.appendChild(productCard);
+              });
+            } else {
+              suggestedProductsGrid.innerHTML = `<div class="empty-state" style="grid-column: 1 / -1;">
+                    <p>Sorry, I couldn't generate product suggestions right now. Please try again.</p>
+                </div>`;
+            }
+
+            generateSuggestionsBtn.textContent = "Get Trending Product Ideas";
+            generateSuggestionsBtn.disabled = false;
+          });
+        }
+
+        // Recalc on window resize
+        window.addEventListener("resize", () => setActive(current));
+        cards.forEach((card) => {
+          card.querySelectorAll("img").forEach((img) => {
+            if (img.complete) return;
+            img.addEventListener("load", () => setActive(current));
+            img.addEventListener("error", () => setActive(current));
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
