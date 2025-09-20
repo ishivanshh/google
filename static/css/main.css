@@ -383,19 +383,17 @@
   }
   
   .save-btn {
-    background: var(--brand);
-    color: var(--cream);
-    border: none;
-    border-radius: 8px;
-    padding: 16px 24px;
+    cursor: pointer;
+    padding: 13px;
+    background-color: rgba(39, 69, 90, 0.2);
+    color: white;
     font-family: "Playfair Display", serif;
     font-weight: 700;
     font-size: 18px;
-    cursor: pointer;
     transition: all 0.2s ease;
     box-shadow: 0 4px 12px rgba(39, 69, 90, 0.3);
     margin-top: 8px;
-    background-color: rgba(13, 43, 58, 0.3);
+    
   }
   
   .save-btn:hover {

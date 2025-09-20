@@ -10,51 +10,60 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
+            /* Changed background color to a very light blue to match the dashboard's background */
+            background-color: #e6f7ff; 
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6;
         }
     </style>
 </head>
 <body class="flex items-center justify-center min-h-screen p-4">
 
-    <div class="max-w-4xl w-full bg-white shadow-xl rounded-2xl overflow-scroll md:flex">
+    <!-- The main container now has a fixed height and is scrollable on mobile. -->
+    <div class="max-w-4xl w-full bg-white shadow-lg rounded-3xl overflow-hidden flex flex-col md:flex-row max-h-[95vh]">
         <!-- Sidebar/Left Column -->
-        <div class="md:w-1/3 bg-gray-900 p-8 text-white flex flex-col justify-center items-center text-center">
+        <!-- Changed from bg-gray-900 to a soft blue color -->
+        <div class="md:w-1/3 bg-[#b3e0f2] p-8 text-[#1a5276] flex flex-col justify-center items-center text-center">
             <h1 class="text-3xl font-bold mb-4">Post Ideas</h1>
-            <p class="text-gray-400 text-sm">
+            <p class="text-[#3c6e91] text-sm">
                 Unlock your social media creativity with AI-generated post suggestions.
+                
             </p>
         </div>
 
-        <!-- Main Content/Right Column -->
-        <div class="md:w-2/3 p-8 flex flex-col justify-center">
-            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center md:text-left">Generate Your Post Suggestions</h2>
+        <!-- Main Content/Right Column now has a scrollbar for overflow content -->
+        <div class="md:w-2/3 p-8 flex flex-col overflow-y-auto">
+            <!-- Changed text color to a darker blue for better contrast -->
+            <h2 class="text-2xl font-bold text-[#1a5276] mb-6 text-center md:text-left">Generate Your Post Suggestions</h2>
             <form id="post-form" class="space-y-4">
                 <div>
                     <label for="product-name" class="block text-sm font-medium text-gray-700">Product Name</label>
+                    <!-- Updated focus ring color to a soft blue -->
                     <input type="text" id="product-name" name="product-name" required
-                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border">
+                        class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-[#4da6ff] focus:ring-[#4da6ff] sm:text-sm p-2 border">
                 </div>
                 <div>
                     <label for="product-type" class="block text-sm font-medium text-gray-700">Product Type</label>
+                    <!-- Updated focus ring color -->
                     <input type="text" id="product-type" name="product-type" required
-                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border">
+                        class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-[#4da6ff] focus:ring-[#4da6ff] sm:text-sm p-2 border">
                 </div>
                 <div>
                     <label for="product-description" class="block text-sm font-medium text-gray-700">Product
                         Description</label>
+                    <!-- Updated focus ring color -->
                     <textarea id="product-description" name="product-description" rows="4" required
-                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"></textarea>
+                        class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-[#4da6ff] focus:ring-[#4da6ff] sm:text-sm p-2 border"></textarea>
                 </div>
+                <!-- Changed button color to a vibrant blue to match the dashboard's "Register" button -->
                 <button type="submit"
-                    class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-200">
+                    class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-lg text-white bg-[#007bff] hover:bg-[#0056b3] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#007bff] transition-all duration-200">
                     Generate Post Ideas
                 </button>
             </form>
 
             <div id="status-message" class="mt-4 text-center text-sm font-medium text-red-600 hidden"></div>
             <div id="loading-indicator" class="mt-4 text-center text-gray-500 hidden">
-                <svg class="animate-spin h-5 w-5 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <svg class="animate-spin h-5 w-5 mx-auto text-[#007bff]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                     <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
@@ -64,7 +73,8 @@
         </div>
     </div>
 
-    <div id="clipboard-message" class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-sm px-4 py-2 rounded-lg shadow-lg transition-all duration-300 opacity-0 transform translate-y-4">
+    <!-- The clipboard message is now orange/yellow to match the other accent color -->
+    <div id="clipboard-message" class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-[#ffc107] text-[#333] text-sm px-4 py-2 rounded-lg shadow-lg transition-all duration-300 opacity-0 transform translate-y-4">
         Text copied to clipboard!
     </div>
     
@@ -77,7 +87,7 @@
             const clipboardMessage = document.getElementById('clipboard-message');
 
             const API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=';
-            const apiKey = "AIzaSyDatSpfwiCDO4oEFsduF3_w5MerfyZQ8oQ"; // API key is provided at runtime.
+            const apiKey = "AIzaSyDatSpfwiCDO4oEFsduF3_w5MerfyZQ8oQ";
 
             form.addEventListener('submit', async (e) => {
                 e.preventDefault();

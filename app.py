@@ -1,8 +1,10 @@
 import os
-from flask import Flask, render_template, request, redirect, url_for, flash, session
+from flask import Flask, render_template, request, redirect, url_for, flash, session, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
+from config import Config
 
+app.config.from_object(Config)
 # --- Configuration ---
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_super_secret_key_here'
@@ -102,6 +104,13 @@ def logout():
     session.pop('username', None)
     flash('You have been logged out.', 'info')
     return redirect(url_for('login'))
+
+
+API_KEY = os.getenv("MY_SECRET_API_KEY", "default-key")
+
+@app.route("/get-api-key")
+def get_api_key():
+  return jsonify({"apiKey": API_KEY})
 
 
 # --- Main entry point ---
