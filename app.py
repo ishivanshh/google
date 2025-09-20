@@ -1,10 +1,9 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for, flash, session, jsonify
 from flask_sqlalchemy import SQLAlchemy
-from flask_bcrypt import Bcrypt
-from config import Config
+from flask_bcrypt import Bcrypt 
 
-app.config.from_object(Config)
+
 # --- Configuration ---
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_super_secret_key_here'
